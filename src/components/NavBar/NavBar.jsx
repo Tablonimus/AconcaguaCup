@@ -7,10 +7,10 @@ export default function NavBar() {
     <Navbar class="flex bg-white items-center w-full fixed" fluid={true} rounded={true}>
       <Navbar.Brand href="">
         <span className="flex items-center ml-2 self-center whitespace-nowrap text-xl font-semibold text-white">
-          <img src={ac} className="h-24 rounded-full flex" alt="Logo" />
+          <img src={ac} className="h-20 rounded-full flex" alt="Logo" />
           <h1 className="text-black font-bold font-serif text-md text-sm ml-2 mr-5">
             {" "}
-           Mendoza-Argentina
+
           </h1>
         </span>
       </Navbar.Brand>

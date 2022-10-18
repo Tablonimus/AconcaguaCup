@@ -7,6 +7,8 @@ import { Tabs } from "flowbite-react";
 import Cronograma from "../Cronograma/Cronograma";
 import { Carousel } from "flowbite-react";
 import FootComp from "../Footer/FootComp";
+import Carru from "../Carru/Carru";
+import Carru2 from "../Carru/Carru2";
 
 export default function Home() {
   return (
@@ -15,64 +17,12 @@ export default function Home() {
       <Header />
       <div className="">
         <div className="grid h-56 grid-cols-2 gap-4 sm:h-64 xl:h-80 2xl:h-96">
-          <Carousel>
-            <img
-              src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
-              alt="..."
-              className="rounded-lg"
-            />
-            <img
-              src="https://flowbite.com/docs/images/carousel/carousel-2.svg"
-              alt="..."
-              className="rounded-lg"
-            />
-            <img
-              src="https://flowbite.com/docs/images/carousel/carousel-3.svg"
-              alt="..."
-              className="rounded-lg"
-            />
-            <img
-              src="https://flowbite.com/docs/images/carousel/carousel-4.svg"
-              alt="..."
-              className="rounded-lg"
-            />
-            <img
-              src="https://flowbite.com/docs/images/carousel/carousel-5.svg"
-              alt="..."
-              className="rounded-lg"
-            />
-          </Carousel>
-          <Carousel indicators={false}>
-            <img
-              src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
-              alt="..."
-              className="rounded-lg"
-            />
-            <img
-              src="https://flowbite.com/docs/images/carousel/carousel-2.svg"
-              alt="..."
-              className="rounded-lg"
-            />
-            <img
-              src="https://flowbite.com/docs/images/carousel/carousel-3.svg"
-              alt="..."
-              className="rounded-lg"
-            />
-            <img
-              src="https://flowbite.com/docs/images/carousel/carousel-4.svg"
-              alt="..."
-              className="rounded-lg"
-            />
-            <img
-              src="https://flowbite.com/docs/images/carousel/carousel-5.svg"
-              alt="..."
-              className="rounded-lg"
-            />
-          </Carousel>
+          <Carru />
+          <Carru2 />
         </div>
       </div>
       <Cronograma />
-      <FootComp/>
+      <FootComp />
     </div>
   );
 }

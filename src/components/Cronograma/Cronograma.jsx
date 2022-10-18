@@ -5,7 +5,7 @@ import { Tabs } from 'flowbite-react'
 export default function Cronograma() {
   return (
    
-       <div className="bg-white flex flex-col w-full items-center">
+       <div className="bg-white flex flex-col w-full  items-center">
         <h5 className="font-bold text-gray-500">Cronograma</h5>
         <Tabs.Group aria-label="Tabs with icons" style="underline">
           <Tabs.Item

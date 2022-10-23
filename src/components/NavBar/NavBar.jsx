@@ -5,7 +5,7 @@ import { Navbar } from "flowbite-react";
 export default function NavBar() {
   return (
     <Navbar
-      class="flex bg-white items-center w-full fixed"
+      class="flex bg-white items-center w-full fixed z-30"
       fluid={true}
       rounded={true}
     >

@@ -12,11 +12,9 @@ import h7 from "../../assets/images/h7.jpg";
 export default function Carru() {
   return (
     <Carousel>
-      <img src={h1} alt="..." className="rounded-lg" />
-      <img src={h2} alt="..." className="rounded-lg" />
-      <img src={h3} alt="..." className="rounded-lg" />
-      <img src={h4} alt="..." className="rounded-lg" />
-      <img src={h5} alt="..." className="rounded-lg" />
+      <img src={h1} alt="..." className="object-cover rounded-lg h-96" />
+      <img src={h2} alt="..." className="object-cover rounded-lg h-96" />
+      <img src={h3} alt="..." className="object-cover rounded-lg h-96" />
     </Carousel>
   );
 }

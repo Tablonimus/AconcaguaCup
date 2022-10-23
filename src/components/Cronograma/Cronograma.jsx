@@ -1,6 +1,8 @@
 import React from "react";
 import NavBar from "../NavBar/NavBar";
 import { Tabs } from "flowbite-react";
+import { Link } from "react-router-dom";
+import map from "../../assets/images/map.png";
 
 export default function Cronograma() {
   return (
@@ -11,12 +13,37 @@ export default function Cronograma() {
           title="Lun 21/5"
           /*  icon={HiUserCircle} */
         >
-          <span className="flex flex-col">
-            <h1>9:00 - 9.30: Reunion inicial</h1>
-            <h1>9:00 - 9.30: Reunion inicial</h1>
-            <h1>9:00 - 9.30: Reunion inicial</h1>
-            <h1>9:00 - 9.30: Reunion inicial</h1>
-          </span>
+          <div className="flex flex-col items-center">
+            {/* Hace Click en el evento para conocer la ubicación */}
+            <a
+              target="_blank"
+              href="https://www.google.com/maps/place/Estadio+Malvinas+Argentinas/@-32.8896642,-68.8800956,15z/data=!4m2!3m1!1s0x0:0x684a90ae779e7723?sa=X&ved=2ahUKEwiCmd2Uo_X6AhWhQ7gEHS7oCt8Q_BJ6BAhHEAU"
+            >
+              <div className="flex flex-col items-center border-y border-[#14ABD5]">
+                <h5 className="font-bold">08:30hs a 11:00hs</h5>
+                <h5>
+                  Entrega de Acreditaciones en "Estadio Malvinas Argentinas"
+                </h5>
+                <div className="flex items-center mb-2 ">
+                  <img src={map} alt="" className="w-5 rounded-full" />
+                  <h5 className=" text-sm font-semibold border-b border-[#14ABD5]">"Ver en el mapa"</h5>
+                </div>
+              </div>
+            </a>
+            <a
+              target="_blank"
+              href="https://www.google.com/maps/place/Banco+Rugby+Club/@-32.8892743,-68.7501503,15z/data=!4m5!3m4!1s0x0:0x9f2dad5ed9be76e7!8m2!3d-32.8892743!4d-68.7501503"
+            >
+              <div className="flex flex-col items-center border-y border-[#14ABD5]">
+                <h5 className="font-bold">08:30hs a 11:00hs:</h5>
+                <h5>20:00hs a 22:00hs: Acto inaugural en "Banco Rugby Club"</h5>
+                <div className="flex items-center mb-2">
+                  <img src={map} alt="" className="w-5" />
+                  <h5 className=" text-sm font-semibold border-b border-[#14ABD5]">"Ver en el mapa"</h5>
+                </div>
+              </div>
+            </a>
+          </div>
         </Tabs.Item>
         <Tabs.Item
           active={true}

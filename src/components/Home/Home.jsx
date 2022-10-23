@@ -23,15 +23,19 @@ export default function Home() {
       <NavBar />
       <Cronograma />
       <div className="w-full  rounded-lg   flex flex-col lg:grid lg:grid-cols-2  justify-center items-center">
-        <div className="w-full bg-[#F6D50E] lg:px-1 py-2 h-96  flex flex-col">
-          <Carru />
-        </div>
         <div className="w-full  bg-[#F6D50E] rounded-b-lg lg:rounded-none  py-2 h-96 flex flex-col">
           <Carru2 />
         </div>
+
+        <div className="w-full bg-[#F6D50E] lg:px-1 py-2 h-96  flex flex-col">
+          <Carru />
+        </div>
       </div>
-      <Header />
+      <div className="w-full">
+        
+        <Header />
       <FootComp />
+        </div> 
     </div>
   );
 }

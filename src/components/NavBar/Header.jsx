@@ -4,8 +4,8 @@ import { Navbar } from "flowbite-react";
 
 export default function Header() {
   return (
-    <div className="  w-full bg-white rounded-b flex items-center justify-center">
-      <img src={header} className="mt-5 px-2 h- flex" alt="Logo" />
+    <div className="  w-full bg-white rounded-t flex items-center justify-center">
+      <img src={header} className="px-2 flex w-96" alt="Logo" />
     </div>
   );
 }

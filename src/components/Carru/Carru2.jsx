@@ -11,9 +11,9 @@ import h7 from "../../assets/images/h7.jpg";
 
 export default function Carru2() {
   return (
-    <Carousel indicators={false}>
+    <Carousel indicators={false} slide={false}>
       <img src={h4} alt="..." className="object-cover rounded-lg h-96" />
-      <img src={h5} alt="..." className="object-cover rounded-lg h-96" />
+     <img src={h5} alt="..." className="object-cover rounded-lg h-96" />
       <img src={h6} alt="..." className="object-cover rounded-lg h-96" />
       <img src={h7} alt="..." className="object-cover rounded-lg h-96" />
       

@@ -15,6 +15,10 @@ export default function Carru() {
       <img src={h1} alt="..." className="object-cover rounded-lg h-96" />
       <img src={h2} alt="..." className="object-cover rounded-lg h-96" />
       <img src={h3} alt="..." className="object-cover rounded-lg h-96" />
+      <img src={h4} alt="..." className="object-cover rounded-lg h-96" />
+      <img src={h5} alt="..." className="object-cover rounded-lg h-96" />
+      <img src={h6} alt="..." className="object-cover rounded-lg h-96" />
+      <img src={h7} alt="..." className="object-cover rounded-lg h-96" />
     </Carousel>
   );
 }

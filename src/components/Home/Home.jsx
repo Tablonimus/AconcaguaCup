@@ -32,10 +32,9 @@ export default function Home() {
         </div>
       </div>
       <div className="w-full">
-        
         <Header />
-      <FootComp />
-        </div> 
+        <FootComp />
+      </div>
     </div>
   );
 }

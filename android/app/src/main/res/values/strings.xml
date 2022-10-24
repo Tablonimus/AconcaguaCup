@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<resources>
-    <string name="app_name">AconcaguaCup2022</string>
-    <string name="title_activity_main">AconcaguaCup2022</string>
-    <string name="package_name">app.vercel.aconcaguacup2022</string>
-    <string name="custom_url_scheme">app.vercel.aconcaguacup2022</string>
-</resources>

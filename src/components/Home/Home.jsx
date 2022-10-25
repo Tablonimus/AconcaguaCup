@@ -16,14 +16,26 @@ import h4 from "../../assets/images/h4.jpg";
 import h5 from "../../assets/images/h5.jpg";
 import h6 from "../../assets/images/h6.jpg";
 import h7 from "../../assets/images/h7.jpg";
+import Push from "push.js";
 
 export default function Home() {
+  function handlerNotification(e) {
+    e.preventDefault();
+    console.log("click");
+    Push.create("Hello World!");
+  }
   return (
     <div className="flex flex-col justify-between gap-5  w-full items-center">
       <NavBar />
       <Cronograma />
       <div className="w-full  rounded-lg   flex flex-col lg:grid lg:grid-cols-2  justify-center items-center">
         <div className="w-full  bg-[#F6D50E] rounded-b-lg lg:rounded-none  py-2 h-96 flex flex-col">
+          <button
+            className="w-56 h-56 rounded-lg bg-red-200"
+            onClick={(e) => handlerNotification(e)}
+          >
+            SUSCRIBITE A LAS NOTIFICACIONES
+          </button>
           <Carru2 />
         </div>
 
